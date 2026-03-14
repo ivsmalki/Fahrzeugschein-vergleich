@@ -1,0 +1,461 @@
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+.zula-outer-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.zula-scale-wrap {
+  width: 1160px;
+  position: relative;
+}
+.zula-page-wrap {
+  width: 1160px;
+  background: #fff;
+  padding: 16px 24px 24px;
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-size: 12px;
+  color: #313131;
+  box-sizing: border-box;
+}
+.zula-page-wrap * { box-sizing: border-box; margin: 0; padding: 0; }
+
+.zula-page-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #127bb5;
+  margin-bottom: 6px;
+}
+.zula-page-desc {
+  font-size: 11px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  max-width: 900px;
+}
+.zula-main-layout {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+}
+.zula-gif-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 285px;
+  height: 775px;
+}
+.zula-gif-wrap img {
+  display: block;
+  width: 285px;
+  height: 775px;
+  position: absolute;
+  top: 0; left: 0;
+}
+.zula-fz {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  background: transparent;
+  transition: background 0.15s ease;
+}
+.zula-fz.active {
+  background: rgba(18,123,181,0.28);
+  outline: 2px solid #127bb5;
+  outline-offset: -1px;
+}
+@media (hover: hover) {
+  .zula-fz:hover {
+    background: rgba(18,123,181,0.28);
+    outline: 2px solid #127bb5;
+    outline-offset: -1px;
+  }
+}
+.zula-right-panel { flex: 1; min-width: 0; }
+.zula-right-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #127bb5;
+  border-bottom: 2px solid #127bb5;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.zula-coc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+.zula-coc-table td {
+  border: 1px solid #ccc;
+  padding: 5px 7px;
+  vertical-align: top;
+  background: #E6E6E6;
+  cursor: default;
+  transition: background 0.15s;
+}
+.zula-coc-table td.zula-hl {
+  background: #127bb5 !important;
+  color: #fff !important;
+}
+.zula-coc-table td.zula-hl .zula-fn,
+.zula-coc-table td.zula-hl .zula-fl,
+.zula-coc-table td.zula-hl .zula-fv,
+.zula-coc-table td.zula-hl small,
+.zula-coc-table td.zula-hl sub,
+.zula-coc-table td.zula-hl sup { color: #fff !important; }
+.zula-coc-table td[data-gif] { cursor: pointer; }
+.zula-fn { display:block; font-size:9px; font-weight:700; color:#127bb5; font-family:'IBM Plex Mono',monospace; margin-bottom:1px; }
+.zula-fl { display:block; font-size:9px; color:#777; margin-bottom:2px; }
+.zula-fv { display:block; font-size:11px; color:#313131; font-weight:500; }
+.zula-data-source {
+  margin-top: 20px;
+  font-size: 10px;
+  color: #666;
+  line-height: 1.7;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+</style>
+
+<div class="zula-outer-wrap">
+  <div class="zula-scale-wrap" id="zulaCocScaleWrap">
+    <div class="zula-page-wrap">
+      <div class="zula-page-title">Arbeitshilfe zum Ausfüllen der Zulassungsbescheinigung Teil I</div>
+      <div class="zula-page-desc">
+        Bewegen Sie den Cursor über die Felder, um die Zuordnung (Zulassungsbescheinigung – EWG-Übereinstimmungsbescheinigung) anzuzeigen.
+        Klicken Sie auf ein Feld in der Zulassungsbescheinigung für weiterführende Informationen.
+      </div>
+
+      <div class="zula-main-layout">
+
+        <div class="zula-gif-wrap" id="zulaCocGifWrap">
+          <img src="https://taha9335.github.io/first/zula.gif" alt="Zulassungsbescheinigung Teil I">
+
+          <div class="zula-fz" style="left:2px;top:102px;width:117px;height:15px;" title="B: Datum der Erstzulassung des Fahrzeuges"></div>
+          <div class="zula-fz" style="left:119px;top:102px;width:58px;height:15px;" title="(2.1): Code zu (2) 2"></div>
+          <div class="zula-fz" style="left:177px;top:102px;width:99px;height:16px;" title="(2.2): Code zu D.2 mit Prüfziffer 3"></div>
+          <div class="zula-fz" data-cells="0-4" style="left:2px;top:117px;width:136px;height:17px;" title="J: Fahrzeugklasse"></div>
+          <div class="zula-fz" data-cells="37" style="left:138px;top:117px;width:137px;height:16px;" title="(4): Art des Aufbaus"></div>
+          <div class="zula-fz" data-cells="0-6" style="left:2px;top:134px;width:215px;height:16px;" title="E: Fahrzeug-Identifizierungsnummer"></div>
+          <div class="zula-fz" style="left:216px;top:133px;width:59px;height:17px;" title="(3): Prüfziffer zur Fahrzeug-Identifizierungsnummer"></div>
+          <div class="zula-fz" data-cells="0-1" style="left:2px;top:150px;width:272px;height:17px;" title="D.1: Marke"></div>
+          <div class="zula-fz" data-cells="0-2" style="left:2px;top:166px;width:272px;height:64px;" title="D.2: Typ/Variante/Version"></div>
+          <div class="zula-fz" data-cells="0-2-1" style="left:2px;top:230px;width:273px;height:17px;" title="D.3: Handelsbezeichnung(en)"></div>
+          <div class="zula-fz" style="left:1px;top:246px;width:274px;height:17px;" title="(2): Hersteller-Kurzbezeichnung"></div>
+          <div class="zula-fz" style="left:1px;top:262px;width:274px;height:34px;" title="(5): Bezeichnung der Fahrzeugklasse und des Aufbaus"></div>
+          <div class="zula-fz" data-cells="46" style="left:1px;top:295px;width:274px;height:16px;" title="V.9: Schadstoffklasse"></div>
+          <div class="zula-fz" style="left:1px;top:310px;width:274px;height:17px;" title="(14): Bezeichnung der nationalen Emissionsklasse"></div>
+          <div class="zula-fz" data-cells="25" style="left:1px;top:327px;width:274px;height:16px;" title="P.3: Kraftstoffart oder Energiequelle"></div>
+          <div class="zula-fz" style="left:1px;top:343px;width:88px;height:17px;" title="(10): Code zu P.3"></div>
+          <div class="zula-fz" data-cells="47" style="left:88px;top:343px;width:89px;height:17px;" title="(14.1): Code zu V.9 oder (14)"></div>
+          <div class="zula-fz" data-cells="24" style="left:176px;top:343px;width:99px;height:17px;" title="P.1: Hubraum in cm³"></div>
+          <div class="zula-fz" data-cells="50" style="left:1px;top:360px;width:275px;height:68px;" title="(22): Bemerkungen und Ausnahmen"></div>
+          <div class="zula-fz" data-cells="1" style="left:1px;top:439px;width:49px;height:18px;" title="L: Anzahl der Achsen"></div>
+          <div class="zula-fz" data-cells="2" style="left:50px;top:439px;width:49px;height:17px;" title="(9): Anzahl der Antriebsachsen"></div>
+          <div class="zula-fz" data-cells="26" style="left:98px;top:439px;width:117px;height:18px;" title="P.2/P.4: Nennleistung in kW / Nenndrehzahl"></div>
+          <div class="zula-fz" data-cells="44" style="left:214px;top:439px;width:62px;height:18px;" title="T: Höchstgeschwindigkeit in km/h"></div>
+          <div class="zula-fz" data-cells="6-1" style="left:0px;top:456px;width:137px;height:16px;" title="(18): Länge in mm"></div>
+          <div class="zula-fz" data-cells="7-1" style="left:137px;top:456px;width:140px;height:17px;" title="(19): Breite in mm"></div>
+          <div class="zula-fz" data-cells="8" style="left:1px;top:472px;width:137px;height:17px;" title="(20): Höhe in mm"></div>
+          <div class="zula-fz" data-cells="12-1" style="left:138px;top:472px;width:139px;height:18px;" title="G: Masse des Fahrzeugs in kg (Leermasse)"></div>
+          <div class="zula-fz" style="left:1px;top:488px;width:78px;height:16px;" title="(12): Rauminhalt des Tanks"></div>
+          <div class="zula-fz" data-cells="19-1" style="left:78px;top:488px;width:98px;height:17px;" title="(13): Stützlast in kg"></div>
+          <div class="zula-fz" style="left:175px;top:489px;width:102px;height:17px;" title="Q: Leistungsgewicht in kW/kg"></div>
+          <div class="zula-fz" data-cells="46-2" style="left:1px;top:504px;width:77px;height:16px;" title="V.7: CO₂ kombinierter Wert"></div>
+          <div class="zula-fz" data-cells="14-1" style="left:77px;top:504px;width:98px;height:16px;" title="F.1: Technisch zulässige Gesamtmasse in kg"></div>
+          <div class="zula-fz" style="left:175px;top:504px;width:101px;height:17px;" title="F.2: Im Zulassungsmitgliedstaat zulässige Gesamtmasse"></div>
+          <div class="zula-fz" data-cells="14-3" style="left:1px;top:520px;width:77px;height:17px;" title="(7.1): Technisch zulässige maximale Achslast, Achse 1"></div>
+          <div class="zula-fz" data-cells="14-3" style="left:77px;top:520px;width:99px;height:17px;" title="(7.2): Technisch zulässige maximale Achslast, Achse 2"></div>
+          <div class="zula-fz" style="left:175px;top:520px;width:102px;height:17px;" title="(7.3): Achslast Achse 3"></div>
+          <div class="zula-fz" style="left:0px;top:537px;width:78px;height:16px;" title="(8.1): Zulässige maximale Achslast Achse 1"></div>
+          <div class="zula-fz" style="left:77px;top:536px;width:98px;height:17px;" title="(8.2): Zulässige maximale Achslast Achse 2"></div>
+          <div class="zula-fz" style="left:174px;top:536px;width:102px;height:17px;" title="(8.3): Zulässige maximale Achslast Achse 3"></div>
+          <div class="zula-fz" data-cells="45" style="left:0px;top:553px;width:78px;height:16px;" title="U.1: Standgeräusche in dB(A)"></div>
+          <div class="zula-fz" data-cells="45" style="left:77px;top:553px;width:99px;height:16px;" title="U.2: Drehzahl in min⁻¹ zu U.1"></div>
+          <div class="zula-fz" data-cells="45" style="left:175px;top:552px;width:102px;height:18px;" title="U.3: Fahrgeräusch in dB(A)"></div>
+          <div class="zula-fz" data-cells="17" style="left:1px;top:568px;width:78px;height:17px;" title="O.1: Technisch zulässige Anhängelast gebremst"></div>
+          <div class="zula-fz" data-cells="17" style="left:79px;top:568px;width:87px;height:17px;" title="O.2: Technisch zulässige Anhängelast ungebremst"></div>
+          <div class="zula-fz" data-cells="42-1" style="left:165px;top:569px;width:49px;height:16px;" title="S.1: Sitzplätze einschließlich Fahrersitz"></div>
+          <div class="zula-fz" style="left:213px;top:569px;width:64px;height:16px;" title="S.2: Stehplätze"></div>
+          <div class="zula-fz" data-cells="32" style="left:1px;top:585px;width:276px;height:17px;" title="(15.1): Bereifung auf Achse 1"></div>
+          <div class="zula-fz" data-cells="32" style="left:1px;top:601px;width:275px;height:17px;" title="(15.2): Bereifung auf Achse 2"></div>
+          <div class="zula-fz" style="left:1px;top:618px;width:275px;height:16px;" title="(15.3): Bereifung auf Achse 3"></div>
+          <div class="zula-fz" data-cells="38" style="left:1px;top:634px;width:164px;height:16px;" title="R: Farbe des Fahrzeuges"></div>
+          <div class="zula-fz" style="left:165px;top:634px;width:111px;height:16px;" title="(11): Code zu R"></div>
+          <div class="zula-fz" data-cells="eg-typ" style="left:0px;top:650px;width:277px;height:16px;" title="K: Nummer der EG-Typgenehmigung oder ABE"></div>
+          <div class="zula-fz" data-cells="eg-typ" style="left:1px;top:666px;width:136px;height:16px;" title="(6): Datum zu K"></div>
+          <div class="zula-fz" style="left:136px;top:665px;width:30px;height:17px;" title="(17): Merkmal zur Betriebserlaubnis"></div>
+          <div class="zula-fz" style="left:166px;top:665px;width:110px;height:17px;" title="(16): Nummer der Zulassungsbescheinigung Teil II"></div>
+          <div class="zula-fz" style="left:1px;top:682px;width:276px;height:16px;" title="(21): Sonstige Vermerke"></div>
+          <div class="zula-fz" data-cells="50" style="left:1px;top:698px;width:275px;height:66px;" title="(22): Bemerkungen und Ausnahmen"></div>
+        </div>
+
+        <div class="zula-right-panel">
+          <div class="zula-right-title">EWG-Übereinstimmungsbescheinigung</div>
+          <table class="zula-coc-table">
+            <tr>
+              <td id="zula-0-1" data-cells-rev="0-1"><span class="zula-fn">0.1</span><span class="zula-fl">Fabrikmarke</span><span class="zula-fv">Volkswagen</span></td>
+              <td id="zula-0-2" data-cells-rev="0-2"><span class="zula-fn">0.2</span><span class="zula-fl">Typ / Variante / Version</span><span class="zula-fv">3C / ACCBABX0<br><small>Version: FM6FM62Q009S17MGS</small></span></td>
+              <td id="zula-0-2-1" data-cells-rev="0-2-1"><span class="zula-fn">0.2.1</span><span class="zula-fl">Handelsname</span><span class="zula-fv">Passat</span></td>
+            </tr>
+            <tr>
+              <td id="zula-0-4" data-cells-rev="0-4"><span class="zula-fn">0.4</span><span class="zula-fl">Fahrzeugklasse</span><span class="zula-fv">M1</span></td>
+              <td id="zula-0-5"><span class="zula-fn">0.5</span><span class="zula-fl">Name und Anschrift des Herstellers</span><span class="zula-fv">Volkswagen</span></td>
+              <td id="zula-0-6" data-cells-rev="0-6"><span class="zula-fn">0.6</span><span class="zula-fl">Fabrikschild / Fahrzeug-Ident.-Nr.</span><span class="zula-fv">WVWZZZ3CZAE0...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-0-7"><span class="zula-fn">0.7</span><span class="zula-fl">Anbringung der Fzg-Ident.-Nr. auf dem Fahrgestell</span><span class="zula-fv">...</span></td>
+              <td id="zula-eg-typ" data-cells-rev="eg-typ"><span class="zula-fn">EG-Typgenehmigung</span><span class="zula-fv">e1*2001/116*0307*21<br>10.08.2009</span></td>
+              <td id="zula-1" data-cells-rev="1"><span class="zula-fn">1.</span><span class="zula-fl">Anzahl der Achsen/Räder</span><span class="zula-fv">2/4</span></td>
+            </tr>
+            <tr>
+              <td id="zula-2" data-cells-rev="2"><span class="zula-fn">2.</span><span class="zula-fl">Antriebsachsen</span><span class="zula-fv">1</span></td>
+              <td id="zula-3"><span class="zula-fn">3.</span><span class="zula-fl">Radstand</span><span class="zula-fv">2.709 mm</span></td>
+              <td id="zula-5"><span class="zula-fn">5.</span><span class="zula-fl">Spurweite(n) Achse 1/2</span><span class="zula-fv">...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-6-1" data-cells-rev="6-1"><span class="zula-fn">6.1</span><span class="zula-fl">Länge</span><span class="zula-fv">4.774 – 4.870 mm</span></td>
+              <td id="zula-7-1" data-cells-rev="7-1"><span class="zula-fn">7.1</span><span class="zula-fl">Breite</span><span class="zula-fv">1.820 mm</span></td>
+              <td id="zula-8" data-cells-rev="8"><span class="zula-fn">8.</span><span class="zula-fl">Höhe</span><span class="zula-fv">1.456 – 1.537 mm</span></td>
+            </tr>
+            <tr>
+              <td id="zula-11"><span class="zula-fn">11.</span><span class="zula-fl">Hinterer Überhang</span><span class="zula-fv">...</span></td>
+              <td id="zula-12-1" data-cells-rev="12-1"><span class="zula-fn">12.1</span><span class="zula-fl">Masse des fahrbereiten Fahrzeugs mit Aufbau</span><span class="zula-fv">1.572 kg</span></td>
+              <td id="zula-14-1" data-cells-rev="14-1"><span class="zula-fn">14.1</span><span class="zula-fl">Technisch zulässige Gesamtmasse</span><span class="zula-fv">2.170 kg</span></td>
+            </tr>
+            <tr>
+              <td id="zula-14-2"><span class="zula-fn">14.2</span><span class="zula-fl">Verteilung dieser Masse auf die Achsen 1/2</span><span class="zula-fv">...</span></td>
+              <td id="zula-14-3" data-cells-rev="14-3"><span class="zula-fn">14.3</span><span class="zula-fl">Technisch zulässige maximale Achslast 1/2</span><span class="zula-fv">1.120 kg / 1.100 kg</span></td>
+              <td id="zula-16"><span class="zula-fn">16.</span><span class="zula-fl">Höchstzulässige Belastung des Daches</span><span class="zula-fv">...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-17" data-cells-rev="17"><span class="zula-fn">17.</span><span class="zula-fl">Größte Anhängelast gebremst/ungebremst</span><span class="zula-fv">1.800/750 kg</span></td>
+              <td id="zula-18"><span class="zula-fn">18.</span><span class="zula-fl">Zulässige Gesamtmasse der Fahrzeugkombination</span><span class="zula-fv">3.970 kg</span></td>
+              <td id="zula-19-1" data-cells-rev="19-1"><span class="zula-fn">19.1</span><span class="zula-fl">Größte vertikale Stützlast</span><span class="zula-fv">90 kg</span></td>
+            </tr>
+            <tr>
+              <td id="zula-20"><span class="zula-fn">20.</span><span class="zula-fl">Hersteller der Antriebsmaschine</span><span class="zula-fv">Volkswagen</span></td>
+              <td id="zula-21"><span class="zula-fn">21.</span><span class="zula-fl">Baumusterbezeichnung</span><span class="zula-fv">...</span></td>
+              <td id="zula-22"><span class="zula-fn">22.</span><span class="zula-fl">Arbeitsverfahren</span><span class="zula-fv">...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-22-1"><span class="zula-fn">22.1</span><span class="zula-fl">Direkteinspritzung</span><span class="zula-fv">...</span></td>
+              <td id="zula-23"><span class="zula-fn">23.</span><span class="zula-fl">Anzahl und Anordnung der Zylinder</span><span class="zula-fv">...</span></td>
+              <td id="zula-24" data-cells-rev="24"><span class="zula-fn">24.</span><span class="zula-fl">Hubvolumen</span><span class="zula-fv">1.968 cm³</span></td>
+            </tr>
+            <tr>
+              <td id="zula-25" data-cells-rev="25"><span class="zula-fn">25.</span><span class="zula-fl">Kraftstoff</span><span class="zula-fv">Diesel</span></td>
+              <td id="zula-26" data-cells-rev="26"><span class="zula-fn">26.</span><span class="zula-fl">Nennleistung</span><span class="zula-fv">103 kW bei 4.200 min<sup>-1</sup></span></td>
+              <td id="zula-27"><span class="zula-fn">27.</span><span class="zula-fl">Kupplung (Typ)</span><span class="zula-fv">...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-28"><span class="zula-fn">28.</span><span class="zula-fl">Getriebe (Typ)</span><span class="zula-fv">...</span></td>
+              <td id="zula-29"><span class="zula-fn">29.</span><span class="zula-fl">Übersetzungsverhältnisse</span><span class="zula-fv">1. Gang 3,769 / 2. Gang ...</span></td>
+              <td id="zula-30"><span class="zula-fn">30.</span><span class="zula-fl">Antriebsübersetzung</span><span class="zula-fv">1. Gang 3,450 / 2. Gang ...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-32" data-cells-rev="32"><span class="zula-fn">32.</span><span class="zula-fl">Bereifung und Räder</span><span class="zula-fv">Achse 1: 205/55 R16 91H 6,5Jx16 ET42<br>Achse 2: 205/55 R16 91H 6,5Jx16 ET42</span></td>
+              <td id="zula-34"><span class="zula-fn">34.</span><span class="zula-fl">Art der Lenkanlage</span><span class="zula-fv">...</span></td>
+              <td id="zula-35"><span class="zula-fn">35.</span><span class="zula-fl">Kurzbeschreibung des Bremssystems</span><span class="zula-fv">...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-37" data-cells-rev="37"><span class="zula-fn">37.</span><span class="zula-fl">Art des Aufbaus</span><span class="zula-fv">AC Kombilimousine</span></td>
+              <td id="zula-38" data-cells-rev="38"><span class="zula-fn">38.</span><span class="zula-fl">Farbe des Fahrzeugs</span><span class="zula-fv">Grau</span></td>
+              <td id="zula-41"><span class="zula-fn">41.</span><span class="zula-fl">Anzahl und Anordnung der Türen</span><span class="zula-fv">...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-42-1" data-cells-rev="42-1"><span class="zula-fn">42.1</span><span class="zula-fl">Anzahl und Lage der Sitze</span><span class="zula-fv">5, ...</span></td>
+              <td id="zula-43-1"><span class="zula-fn">43.1</span><span class="zula-fl">EG-Typgenehmigungszeichen der Anhängevorrichtung</span><span class="zula-fv">...</span></td>
+              <td id="zula-44" data-cells-rev="44"><span class="zula-fn">44.</span><span class="zula-fl">Höchstgeschwindigkeit</span><span class="zula-fv">206 km/h</span></td>
+            </tr>
+            <tr>
+              <td id="zula-45" data-cells-rev="45" colspan="3"><span class="zula-fn">45.</span><span class="zula-fl">Geräuschpegel: 70/157/EWG*2006/96/EG</span><span class="zula-fv">Standgeräusch bei Motordrehzahl: 74,00 dB(A) / 3.150 min<sup>-1</sup> &nbsp;|&nbsp; Fahrgeräusch: 70,00 dB(A)</span></td>
+            </tr>
+            <tr>
+              <td id="zula-46" data-cells-rev="46"><span class="zula-fn">46.1</span><span class="zula-fl">Abgasverhalten: 715/2007*692/2008A</span><span class="zula-fv">CO: 0,3049 g/km / NO<sub>x</sub>: ...</span></td>
+              <td id="zula-46-2" data-cells-rev="46-2" colspan="2"><span class="zula-fn">46.2</span><span class="zula-fl">CO₂-Emissionen / Kraftstoffverbrauch: 715/2007*692/2008A</span><span class="zula-fv">innerorts: 191 g/km / 7,3 l/100 km &nbsp;|&nbsp; außerorts: ...</span></td>
+            </tr>
+            <tr>
+              <td id="zula-47" data-cells-rev="47"><span class="zula-fn">47.</span><span class="zula-fl">Ggf. Steuerleistung oder nationale Codenummer(n)</span><span class="zula-fv">Deutschland: 35A0</span></td>
+              <td id="zula-50" data-cells-rev="50" colspan="2"><span class="zula-fn">50.</span><span class="zula-fl">Anmerkungen</span><span class="zula-fv">Anhängebetrieb* O1: 2000 bis 8% / ZUGES MAX. 3970KG* / AHK M. SPEZ. FAHRDYN. STABI. 100 KM/H GEM. 3. AEND. VO.</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="zula-data-source">
+        <strong>Datengrundlage:</strong><br>
+        Deutsches Kfz-Gewerbe Zentralverband, 09/2005: Neue Fahrzeugdokumente<br>
+        Kraftfahrtbundesamt, 31.05.2007: Leitfaden zur Ausfüllung der Zulassungsbescheinigungen Teil I + II
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal injected via JS into body -->
+
+<script>
+(function() {
+
+/* ── Force desktop viewport on mobile ── */
+  (function() {
+    var existing = document.querySelector('meta[name="viewport"]');
+    if (existing) {
+      existing.setAttribute('content', 'width=1160');
+    } else {
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=1160';
+      document.head.appendChild(meta);
+    }
+  })();
+
+  /* ── Map old cell IDs to new prefixed IDs ── */
+  function getCell(id) { return document.getElementById('zula-' + id); }
+
+  /* ── Clear all highlights ── */
+  function clearAll() {
+    document.querySelectorAll('.zula-fz.active').forEach(function(el) { el.classList.remove('active'); });
+    document.querySelectorAll('.zula-coc-table td.zula-hl').forEach(function(el) { el.classList.remove('zula-hl'); });
+  }
+
+  /* ── GIF zone → COC cell ── */
+  document.querySelectorAll('.zula-fz[data-cells]').forEach(function(zone) {
+    var cellIds = zone.getAttribute('data-cells').split(',').map(function(s){ return s.trim(); });
+
+    function activate() {
+      zone.classList.add('active');
+      cellIds.forEach(function(id) { var td = getCell(id); if (td) td.classList.add('zula-hl'); });
+    }
+    function deactivate() {
+      zone.classList.remove('active');
+      cellIds.forEach(function(id) { var td = getCell(id); if (td) td.classList.remove('zula-hl'); });
+    }
+    zone.addEventListener('mouseenter', activate);
+    zone.addEventListener('mouseleave', deactivate);
+    zone.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      var was = zone.classList.contains('active');
+      clearAll(); if (!was) activate();
+    }, {passive: false});
+  });
+
+  /* ── COC cell → GIF zone ── */
+  var cellToZones = {};
+  document.querySelectorAll('.zula-fz[data-cells]').forEach(function(zone) {
+    zone.getAttribute('data-cells').split(',').forEach(function(id) {
+      id = id.trim();
+      if (!cellToZones[id]) cellToZones[id] = [];
+      cellToZones[id].push(zone);
+    });
+  });
+
+  document.querySelectorAll('.zula-coc-table td[data-cells-rev]').forEach(function(td) {
+    var id = td.getAttribute('data-cells-rev');
+    var zones = cellToZones[id] || [];
+    function activate() { td.classList.add('zula-hl'); zones.forEach(function(z){ z.classList.add('active'); }); }
+    function deactivate() { td.classList.remove('zula-hl'); zones.forEach(function(z){ z.classList.remove('active'); }); }
+    td.addEventListener('mouseenter', activate);
+    td.addEventListener('mouseleave', deactivate);
+    td.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      var was = td.classList.contains('zula-hl');
+      clearAll(); if (!was) activate();
+    }, {passive: false});
+  });
+
+  document.addEventListener('touchstart', function(e) {
+    if (!e.target.closest('.zula-fz') && !e.target.closest('.zula-coc-table td')) clearAll();
+  });
+
+  /* ── Popups ── */
+  var infoBase = 'https://taha9335.github.io/first/info-seiten-coc/';
+  var popupByTitle = {
+    'B:':'b_erstzulassung.htm','(2.1):':'02-1_code_22.htm','(2.2):':'02-2_code_d2.htm',
+    'J:':'j_fzg-klasse.htm','(4):':'04_aufbau.htm','E:':'e_fzg-ident-nr.htm',
+    '(3):':'03_fzg-ident-nr.htm','D.1:':'d1_marke.htm','D.2:':'d2_typ.htm',
+    'D.3:':'d3_handelsbezeichnung.htm','(2):':'02_hersteller.htm','(5):':'05_fzg-klasse.htm',
+    'V.9:':'v9_schadstoffklasse.htm','(14):':'14_emissionsklasse.htm','P.3:':'p3_kraftstoffart.htm',
+    '(10):':'10_code_p3.htm','(14.1):':'14-1_code_v9.htm','P.1:':'p1_hubraum.htm',
+    '(22):':'22_bemerkungen.htm','L:':'l_achsen.htm','(9):':'09_antriebsachsen.htm',
+    'P.2/P.4:':'p2_p4_leistung.htm','T:':'t_geschwindigkeit.htm','(18):':'18_laenge.htm',
+    '(19):':'19_breite.htm','(20):':'20_hoehe.htm','G:':'g_leermasse.htm',
+    '(12):':'12_tankinhalt.htm','(13):':'13_stuetzlast.htm','Q:':'q_leistungsgewicht.htm',
+    'V.7:':'v7_co2.htm','F.1:':'f1_zgm.htm','F.2:':'f2_zgm_staat.htm',
+    '(7.1):':'07-1_achslast_max.htm','(7.2):':'07-2_achslast_max.htm','(7.3):':'07-3_achslast_max.htm',
+    '(8.1):':'08-1_achslast_max.htm','(8.2):':'08-2_achslast_max.htm','(8.3):':'08-3_achslast_max.htm',
+    'U.1:':'u1_standgeraeusch.htm','U.2:':'u2_drehzahl.htm','U.3:':'u3_fahrgeraeusch.htm',
+    'O.1:':'o1_anhaengelast_gebremst.htm','O.2:':'o2_anhaengelast_ungebremst.htm',
+    'S.1:':'s1_sitzplaetze.htm','S.2:':'s2_stehplaetze.htm',
+    '(15.1):':'15-1_bereifung.htm','(15.2):':'15-2_bereifung.htm','(15.3):':'15-3_bereifung.htm',
+    'R:':'r_farbe.htm','(11):':'11_code_r.htm','K:':'k_eg-typ_abe.htm','(6):':'06_datum.htm',
+    '(17):':'17_betriebserlaubnis.htm','(16):':'16_zulassungsbescheinigung.htm','(21):':'21_vermerke.htm'
+  };
+
+  document.querySelectorAll('.zula-fz').forEach(function(zone) {
+    var title = zone.getAttribute('title') || '';
+    for (var prefix in popupByTitle) {
+      if (title.indexOf(prefix) === 0) {
+        (function(url) {
+          function openModal(e) { e.preventDefault(); zulaCocShowInfo(infoBase + url); }
+          zone.addEventListener('click', openModal);
+          zone.addEventListener('touchend', openModal, {passive: false});
+        })(popupByTitle[prefix]);
+        break;
+      }
+    }
+  });
+
+  /* ── Inject modal into body to avoid z-index/overflow clipping ── */
+  (function() {
+    var m = document.createElement('div');
+    m.id = 'zulaCocModal';
+    m.setAttribute('onclick', 'if(event.target===this)zulaCocCloseInfo()');
+    m.style.cssText = 'display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55);z-index:2147483647;';
+    m.innerHTML = '<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:560px;max-width:96vw;height:440px;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 6px 32px rgba(0,0,0,0.35);">'
+      + '<div style="display:flex;justify-content:flex-end;align-items:center;padding:4px 8px;background:#eee;border-bottom:1px solid #ccc;">'
+      + '<button onclick="zulaCocCloseInfo()" style="border:none;background:none;font-size:22px;cursor:pointer;color:#555;padding:0 6px;line-height:1;">&#10005;</button>'
+      + '</div>'
+      + '<iframe id="zulaCocFrame" style="width:100%;height:calc(100% - 32px);border:none;" src="about:blank"></iframe>'
+      + '</div>';
+    document.body.appendChild(m);
+    document.getElementById('zulaCocFrame').addEventListener('load', function() {
+      zulaCocFixPopupText(this);
+    });
+  })();
+
+  window.zulaCocFixPopupText = function(iframe) {
+    try {
+      var doc = iframe.contentDocument || iframe.contentWindow.document;
+      if (!doc || !doc.head) return;
+      var existing = doc.getElementById('zula-fix-style');
+      if (existing) return;
+      var style = doc.createElement('style');
+      style.id = 'zula-fix-style';
+      style.textContent = [
+        'a { margin: 0 6px !important; display: inline-block !important; }',
+        'td a:first-child { margin-left: 0 !important; }',
+        'body, td, div, p { letter-spacing: normal !important; word-spacing: normal !important; }'
+      ].join(' ');
+      doc.head.appendChild(style);
+    } catch(e) {}
+  };
+
+  window.zulaCocShowInfo = function(url) {
+    var modal = document.getElementById('zulaCocModal');
+    var frame = document.getElementById('zulaCocFrame');
+    frame.src = url;
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  };
+  window.zulaCocCloseInfo = function() {
+    var modal = document.getElementById('zulaCocModal');
+    var frame = document.getElementById('zulaCocFrame');
+    modal.style.display = 'none';
+    frame.src = 'about:blank';
+    document.body.style.overflow = '';
+  };
+  window.addEventListener('message', function(e) { if (e.data === 'closeModal') window.zulaCocCloseInfo(); });
+
+})();
+</script>
